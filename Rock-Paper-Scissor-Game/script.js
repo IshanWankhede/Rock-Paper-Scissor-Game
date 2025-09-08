@@ -109,11 +109,12 @@ resetBtn.addEventListener("click", resetGame);
 
 function speak(text) {
   const speech = new SpeechSynthesisUtterance(text);
-  speech.lang = "en-US"; // you can set "hi-IN" for Hindi
+  speech.lang = "en-US"; 
   speech.pitch = 2;
   speech.rate = 0.8;
   speech.volume = 1;
   window.speechSynthesis.speak(speech);
 }
+
 
 
